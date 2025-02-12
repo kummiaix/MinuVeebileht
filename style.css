@@ -1,0 +1,88 @@
+/* Üldine stiil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;  /* Sujuv kerimine */
+}
+
+
+/* Pealkiri ja menüü */
+header {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+/* Sektsioonid */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Teenuste kaardid */
+.service-card {
+    background: #222;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 255, 204, 0.5);
+}
+
+/* Jalus */
+footer {
+    background: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#kontakt a i {
+    color: #1877F2;  /* Facebooki sinine värv */
+    margin-top: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#kontakt a i:hover {
+    transform: scale(1.2);
+    color: #0d5be1;  /* Tumedam sinine hover-efekt */
+}
+
+#about {
+    background: url("MinuVeebilehe cover.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center 30%;
+    padding: 120px 20px;
+    color: white;
+    text-align: center;
+}
+
+#about p {
+    font-size: 24px; /* Suurem font */
+    font-weight: bold; /* Paksem kiri */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+          /* Lisab varju, et tekst paremini loetav oleks */
+}
+
+
