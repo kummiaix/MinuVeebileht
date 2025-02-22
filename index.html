@@ -8,55 +8,69 @@
     <meta name="keywords" content="veebiarendus, veebidisain, portfell, teenused, professionaalne veebileht">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        function showMainContent() {
+            document.getElementById("intro").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
-    <header>
-        <h1>Minu Äge Veebileht</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Meist</a></li>
-                <li><a href="#services">Teenused</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>Meist</h2>
-        <p>Meie ettevõte pakub parimaid lahendusi.</p>
-    </section>
+    <!-- INTRO (Animatsioon) -->
+    <div id="intro">
+        <iframe src="sunrise_test.html" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; border: none; z-index: 9999;"></iframe>
+    </div>
 
-    <section id="services">
-        <h2>Teenused</h2>
-        <div class="service-card">
-            <h3>Veebiarendus</h3>
-            <p>Pakume professionaalset veebiarendust.</p>
-        </div>
-        <div class="service-card">
-            <h3>Disain</h3>
-            <p>Loo oma unikaalne visuaalne identiteet.</p>
-        </div>
-    </section>
+    <!-- PÕHILEHT (Alguses peidetud) -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <h1>Minu Äge Veebileht</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Meist</a></li>
+                    <li><a href="#services">Teenused</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kummiaix@gmail.com" 
-                   target="_blank">kummiaix@gmail.com</a>
-        <p>Telefon: +372 53642501</p>
-        <p>Aadress: Elva, Eesti</p>
-        
-        <!-- Facebooki ikoon -->
-        <p>
-             <a href="https://www.facebook.com/aix.kummi" target="_blank">
-                 <i class="fa-brands fa-facebook fa-2x"></i>
-             </a>
-        </p>
-    </section>
+        <section id="about">
+            <h2>Meist</h2>
+            <p>Meie ettevõte pakub parimaid lahendusi.</p>
+        </section>
 
+        <section id="services">
+            <h2>Teenused</h2>
+            <div class="service-card">
+                <h3>Veebiarendus</h3>
+                <p>Pakume professionaalset veebiarendust.</p>
+            </div>
+            <div class="service-card">
+                <h3>Disain</h3>
+                <p>Loo oma unikaalne visuaalne identiteet.</p>
+            </div>
+        </section>
 
-    <footer>
-        <p>© 2025 Minu Veebileht. Kõik õigused kaitstud.</p>
-    </footer>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kummiaix@gmail.com" 
+                    target="_blank">kummiaix@gmail.com</a>
+            <p>Telefon: +372 53642501</p>
+            <p>Aadress: Elva, Eesti</p>
+            
+            <p>
+                <a href="https://www.facebook.com/aix.kummi" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2025 Minu Veebileht. Kõik õigused kaitstud.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
